@@ -1,0 +1,15 @@
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+img {
+  width: 30%;
+  border-radius: 15px;
+  /* filter: blur(10px); */
+  /* filter: brightness(500%); */
+  /* filter: opacity(50%); */
+  /* filter: saturate(110%); */
+  /* filter: contrast(130%); */
+  /* filter: drop-shadow(5px 10px 10px #dc143c); */
+  filter: grayscale(100%);
+}

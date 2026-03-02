@@ -1,0 +1,12 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ol {
+  list-style: lower-alpha;
+}
+
+ul {
+  /* list-style: square; */
+  list-style: url(../images/icons8-squidward-tentacles-24.png);
+}
