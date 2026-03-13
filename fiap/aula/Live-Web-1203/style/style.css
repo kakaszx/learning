@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Russo";
+  src: url(../fonts/RussoOne-Regular.ttf);
+}
+
+:root {
+  --font-text: "Quicksand", sans-serif;
+  --font-title: "Russo", sans-serif;
+  --color-light: #f4f4f4;
+  --color-blue-300: #32cbd6;
+  --color-blue-900: #120d24;
+  --color-purple: #d34cb6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+  color: var(--color-light);
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.color-blue-300 {
+  color: var(--color-blue-300);
+}
+
+.color-purple {
+  color: var(--color-purple);
+}
+
+.header-page {
+  height: 80px;
+  width: 100%;
+  background-color: var(--color-blue-900);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 100px;
+}
+
+.header-page h1 {
+  font-size: 32px;
+}
+.controle {
+  color: var(--color-blue-300);
+  position: relative;
+  top: 2px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 16px;
+}
+
+.item-menu {
+  color: var(--color-light);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.item-menu:hover {
+  color: var(--color-blue-300);
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: #110b29;
+}
