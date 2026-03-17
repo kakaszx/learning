@@ -1,0 +1,47 @@
+/* Font Baixada */
+
+/* @font-face {
+  font-family: "Russo";
+  src: url(../fonts/RussoOne-Regular.ttf);
+} */
+
+:root {
+  --font-text: "Montserrat", sans-serif;
+  --font-title: "Barlow", sans-serif;
+  --color-light: #f4f4f4;
+  --color-dark: #0d0d0d;
+  --color-grey: #bfbfbf;
+  --color-dark-grey: #8c8c8c;
+  --color-orange: #d9704a;
+  --color-dark-orange: #f2561d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+  color: var(--color-light);
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+header {
+  background-color: black;
+}
+
+.conteudo-home {
+  
+}
