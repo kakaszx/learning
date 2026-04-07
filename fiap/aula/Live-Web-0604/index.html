@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro e consulta</title>
+
+    <!-- **Link Google Fonts** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- **Font-awesome** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Formulario de busca -->
+    <header>
+      <form
+        id="form-search"
+        name="form-search"
+        class="form-search"
+        method="post"
+        action=""
+      >
+        <input
+          type="search"
+          id="text-search"
+          name="text-search"
+          class="text-search"
+          placeholder="Digite o usuário"
+          autofocus
+          required
+        />
+        <button
+          type="submit"
+          id="btn-search"
+          name="btn-search"
+          class="btn-form"
+        >
+          Buscar
+        </button>
+      </form>
+    </header>
+    <!-- F Formulario de busca -->
+
+    <!-- Formulario de cadastro -->
+    <main>
+      <form
+        id="form-cadastro"
+        name="form-cadastro"
+        class="form-cadastro"
+        method="post"
+        action=""
+      >
+        <fieldset>
+          <legend>Dados do usuário</legend>
+          <section class="form-campos">
+            <!-- Nome -->
+            <div class="span-2">
+              <label for="nome-usuario">Nome completo</label>
+              <div class="form-field">
+                <input
+                  type="text"
+                  name="nome-usuario"
+                  id="nome-usuario"
+                  required
+                  minlength="5"
+                  maxlength="50"
+                  placeholder="Ex: Fulano de Tal"
+                  autocomplete="name"
+                />
+                <i class="fa-regular fa-user icon"></i>
+              </div>
+            </div>
+            <!-- Senha -->
+            <div>
+              <label for="senha-usuario">Senha</label>
+              <div class="form-field">
+                <input
+                  type="password"
+                  name="senha-usuario"
+                  id="senha-usuario"
+                  required
+                  minlength="5"
+                  maxlength="20"
+                  placeholder="Ex: @#$acbd&"
+                  autocomplete="new-password"
+                />
+
+                <i class="fa-solid fa-key icon"></i>
+              </div>
+            </div>
+            <!-- Email -->
+            <div>
+              <label for="email-usuario">Email</label>
+              <div class="form-field">
+                <input
+                  type="email"
+                  name="email-usuario"
+                  id="email-usuario"
+                  required
+                  maxlength="30"
+                  placeholder="Ex: seuemail@email.com"
+                  autocomplete="email"
+                />
+
+                <i class="fa-solid fa-at icon"></i>
+              </div>
+            </div>
+            <!-- Telefone -->
+            <div>
+              <label for="tel-usuario">Telefone</label>
+              <div class="form-field">
+                <input
+                  type="tel"
+                  name="tel-usuario"
+                  id="tel-usuario"
+                  required
+                  placeholder="Ex: (99) 9999-9999"
+                  autocomplete="tel"
+                />
+                <i class="fa-solid fa-phone-flip icon"></i>
+              </div>
+            </div>
+            <!-- Site pessoal -->
+            <div>
+              <label for="site-usuario">Site pessoal</label>
+              <div class="form-field">
+                <input
+                  type="url"
+                  name="site-usuario"
+                  id="site-usuario"
+                  placeholder="Ex: https://www.seusite.com"
+                />
+
+                <i class="fa-solid fa-link icon"></i>
+              </div>
+            </div>
+            <!-- Data -->
+            <div>
+              <label for="data-usuario">Data</label>
+              <div class="form-field">
+                <input
+                  type="date"
+                  name="data-usuario"
+                  id="data-usuario"
+                  required
+                />
+
+                <i class="fa-regular fa-calendar icon"></i>
+              </div>
+            </div>
+            <!-- Tipo de conta -->
+            <div>
+              <label for="tipo-conta-usuario">Tipo de conta</label>
+              <div class="form-field">
+                <select name="tipo-conta-usuario" id="tipo-conta-usuario">
+                  <option value="" disabled selected>
+                    Selecione sua conta
+                  </option>
+                  <option value="Free">Free</option>
+                  <option value="Premium">Premium</option>
+                  <option value="Vip">Vip</option>
+                </select>
+
+                <i class="fa-solid fa-angle-down icon"></i>
+              </div>
+            </div>
+          </section>
+          <div class="btn-container">
+            <button
+              type="submit"
+              id="criar-conta"
+              name="criar-conta"
+              class="btn-form"
+            >
+              Criar conta
+              <i class="fa-solid fa-rocket"></i>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <!-- F Formulario de cadastro -->
+
+    <!-- Script -->
+    <!-- **Máscara JS** -->
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/telMask.js"></script>
+  </body>
+</html>
