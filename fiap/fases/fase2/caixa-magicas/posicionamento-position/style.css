@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 150px auto;
+  width: 80%;
+  min-height: 600px;
+  background-color: rgb(129, 193, 237);
+  position: relative;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #dc143c;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
