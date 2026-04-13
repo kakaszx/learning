@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  margin: 10px;
+  /* display: inline; */
+  /* display: inline-block; */
+  display: block;
+  float: left;
+}
+
+h2 {
+  clear: both;
+  color: aqua;
+}
