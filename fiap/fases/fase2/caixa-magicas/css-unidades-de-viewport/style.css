@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --color-light: #f4f4f4;
+  --color-dark: #333;
+  --color-pink: #dc134c;
+  --transition: 0.5s;
+  --space-10: 1rem;
+  --space-20: 2rem;
+  --space-40: 4rem;
+  --radius: 0.7rem;
+}
+
+.container {
+  font-size: 50px;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.container-1 {
+  background-color: #ccc;
+  /* height: 100vh; */
+  height: 100vh;
+  font-size: 10vmin;
+}
+
+.container-2 {
+  background-color: #aaa;
+  /* height: 50vh; */
+  height: 100vh;
+  font-size: 10vmax;
+}
+
+.container-3 {
+  background-color: #666;
+  /* height: 20vh; */
+  height: 100vh;
+}
