@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --color-light: #f4f4f4;
+  --color-dark: #333;
+  --color-pink: #dc134c;
+  --transition: 0.5s;
+  --space-10: 1rem;
+  --space-20: 2rem;
+  --space-40: 4rem;
+  --radius: 0.7rem;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black-heavy: 900;
+}
+
+body {
+  background-color: #d9d9d9;
+}
+
+/* Parte 1 do HOVER */
+
+/* li {
+  margin: 20px 0;
+}
+
+li:hover {
+  width: 300px;
+  height: 50px;
+  background-color: var(--color-pink);
+  color: #fff;
+} */
+
+/* Fim Parte 1 do HOVER */
+
+/*  Parte 2 do NTH:CHILD */
+
+/* 
+.box {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  border: 3px solid var(--color-pink);
+  padding: 10px;
+  margin: 10px 0;
+} */
+
+/* .box:nth-child(odd) {
+  background-color: var(--color-pink);
+  color: #fff;
+} */
+
+/* .box:first-child {
+  background-color: var(--color-pink);
+  color: #fff;
+}
+
+.box:last-child {
+  background-color: blue;
+  color: #fff;
+  border: 3px solid black;
+} */
+
+/* Fim Parte 2 do NTH:CHILD */
+
+/*  Parte 3 do NOT */
+
+/* .box {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  border: 3px solid var(--color-pink);
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box:not(.no-color) {
+  background-color: var(--color-pink);
+  color: #fff;
+  border: 3px solid #fff;
+} */
+
+/*  Fim Parte 3 do NOT */
+
+/* Parte 4 do Is e Where */
+
+/* .box {
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  border: 3px solid var(--color-pink);
+  padding: 10px;
+  margin: 10px 0;
+} */
+
+/* :is(.bg-color, h2, h3, h4) {
+  background-color: var(--color-pink);
+  color: #fff;
+} */
+
+/* :where(.bg-color, h2, h3, h4) {
+  background-color: var(--color-pink);
+  color: #fff;
+}
+
+h4 {
+  background-color: aqua;
+} */
+
+/* Fim Parte 4 do Is e Where */
+
+/* Parte 5 do Has */
+
+.box {
+  width: 150px;
+  height: 70px;
+  border-radius: 7px;
+  border: 3px solid var(--color-pink);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box:has(p) {
+  background-color: var(--color-pink);
+  color: #fff;
+}
+
+/* Fim Parte 5 Has */
