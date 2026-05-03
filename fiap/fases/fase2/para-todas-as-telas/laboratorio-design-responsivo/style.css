@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
+}
+:root {
+  --color-1: #fff;
+  --color-2: #060b33;
+  --transition: 0.5s;
+  --space-10: 1rem;
+  --space-20: 2rem;
+  --space-40: 4rem;
+  --radius: 0.7rem;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black-heavy: 900;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-light);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+/* Area Header */
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+header h1 {
+  font-size: 6vmin;
+  margin-bottom: 15px;
+}
+
+.header-menu ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header-menu a {
+  color: var(--color-2);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+/* F Area Header */
+
+/* Area Banner */
+.banner {
+  background: url(/images/pexels-dsnsyj-1139541.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-1);
+  text-align: center;
+}
+
+.banner h2 {
+  margin: 20px 0;
+  font-size: 3rem;
+}
+
+.banner h3 {
+  font-size: 2rem;
+}
+
+.banner .btn {
+  margin-top: 20px;
+  background-color: var(--color-2);
+  border: 1px solid var(--color-2);
+  border-radius: 4px;
+  color: var(--color-1);
+  padding: 20px 50px;
+  text-align: center;
+  font-weight: 900;
+  transition: 0.5;
+  font-size: 1.5rem;
+}
+
+.banner .btn:hover {
+  background-color: transparent;
+  color: var(--color-2);
+}
+
+/* F Area Banner */
+
+/* Area Informações */
+
+.informacoes {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.informacoes h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+.informacoes p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.informacoes hr {
+  width: 200px;
+  height: 2px;
+  background-color: var(--color-1);
+  margin-bottom: 70px;
+  border: none;
+}
+
+.informacoes .item {
+  width: 100%;
+  display: flex;
+}
+
+.informacoes .item li {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.informacoes .item li i {
+  color: var(--color-1);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.informacoes .item li h4 {
+  color: var(--color-1);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.informacoes .item li p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* F Area Informações */
+
+/* Area Cadastro */
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.cadastro h3 {
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+.cadastro p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.cadastro form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.cadastro form input {
+  padding: 15px;
+  border: 1px solid var(--color-2);
+  border-radius: 4px;
+  margin-right: 15px;
+  width: 300px;
+}
+
+.cadastro form button {
+  padding: 15px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* F Area Cadastro */
+
+/* Area Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-2);
+  padding: 50px 0;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+footer ul li {
+  margin-right: 10px;
+}
+
+footer ul li:last-child {
+  margin-right: 0px;
+}
+
+footer ul li a {
+  color: var(--color-1);
+  font-size: 2.5rem;
+}
+
+footer p {
+  color: var(--color-1);
+  text-align: center;
+}
+
+/* F Area Footer */
+
+@media (max-width: 850px) {
+  .informacoes .item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header-menu a {
+    font-size: 1.3rem;
+  }
+
+  /* header img {
+    margin-bottom: 15px;
+  } */
+
+  .banner {
+    margin-top: 50px;
+  }
+
+  .banner h2 {
+    font-size: 2.3rem;
+  }
+
+  .banner h3 {
+    font-size: 1.3rem;
+  }
+
+  .cadastro input {
+    margin-bottom: 15px;
+  }
+}
