@@ -1,0 +1,8 @@
+h1 {
+  color: var(--bs-purple);
+}
+
+.my-color {
+  color: var(--bs-white);
+  background-color: var(--bs-pink);
+}
