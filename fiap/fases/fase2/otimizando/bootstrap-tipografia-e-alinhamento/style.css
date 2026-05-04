@@ -1,0 +1,8 @@
+.my-font {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--bs-tertiary-color);
+}
