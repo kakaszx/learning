@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap-carousel</title>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Catamaran:wght@100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="my-4">Carousel</h1>
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2531310/96a6281cea2e9b76b56af8a13e7cb2b59efd8b5c/ss_96a6281cea2e9b76b56af8a13e7cb2b59efd8b5c.1920x1080.jpg?t=1750959180"
+              class="d-block w-100"
+              alt="Imagem da Ellie"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Last of Us™ Parte II Remastered</h5>
+              <p>
+                Experimente o vencedor de mais de 300 prêmios de Jogo do Ano,
+                agora no PC. Descubra a história de Ellie e Abby com melhorias
+                gráficas, modos de jogo como a experiência de sobrevivência
+                roguelike Sem Volta e muito mais.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/08af4e9398b8e45152bfbedce3bc24d22e2c0990/ss_08af4e9398b8e45152bfbedce3bc24d22e2c0990.1920x1080.jpg?t=1772587704"
+              class="d-block w-100"
+              alt="Imagem da Grace"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Resident Evil Requiem</h5>
+              <p>
+                Réquiem para os mortos. Pesadelo para os vivos. Prepare-se para
+                escapar da morte em uma experiência aterrorizante que vai gelar
+                sua espinha..
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2131650/ss_c970157813f8cc0ec6c3676895148159f27fe12c.1920x1080.jpg?t=1737564722"
+              class="d-block w-100"
+              alt="Imagem do Naked Snake"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>
+                METAL GEAR SOLID 3: Snake Eater - Master Collection Version
+              </h5>
+              <p>
+                Metal Gear Solid 3: Snake Eater é a origem da história de Naked
+                Snake e seu mentor, The Boss, e o quinto título da série METAL
+                GEAR.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161700/ss_7017244fb8319ba927a0ef414959b95a6164356f.1920x1080.jpg?t=1764776430"
+              class="d-block w-100"
+              alt="Imagem da aigis quando usa sua habilidade"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Persona 3 Reload</h5>
+              <p>
+                Mergulhe na Hora Sombria e desperte as profundezas do seu
+                coração. Persona 3 Reload é uma reimaginação cativante do RPG
+                que redefiniu o gênero, agora repensado para a era moderna com
+                gráficos e jogabilidade de ponta.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
