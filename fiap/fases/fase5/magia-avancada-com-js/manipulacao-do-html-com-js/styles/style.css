@@ -1,0 +1,8 @@
+label {
+  display: block;
+}
+
+.table-custom-danger thead th {
+  background-color: var(--bs-danger) !important;
+  color: var(--bs-light) !important;
+}
